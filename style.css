@@ -1,0 +1,326 @@
+*{
+	box-sizing:border-box;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+	
+}
+td, .leftAlign{
+	text-align: left;
+}
+
+.prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	left:10%;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	right: 10%;
+	border-radius: 3px 0 0 3px;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	color: white;
+  }
+[class*="col-"]{
+	float:left;
+	
+}
+
+
+
+.slideshow, .adSlideshow{
+	display: none;
+}
+.slideshow img, .adSlideshow img{
+	width:100%;
+}
+.text{
+	position: relative;
+	bottom: 42px;
+	padding: 1%;
+	font-size: larger;
+	opacity: 0.8;
+	background-color: black;
+	color:white;
+	text-align: center;
+}
+.centerText{
+	text-align: center;
+}
+.comment{
+	border-bottom:black 1px solid;
+}
+
+/*Mobile Device*/
+[class*="col-"]{
+	width:100%;
+}
+div{
+	display: block;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+	margin: 0;
+	
+}
+input,textarea{
+
+	font-family: inherit;	
+}
+header img{
+    width:100%;
+	padding: 10px;
+}
+header{
+
+background-color: #9e3c3d;
+}
+footer{
+	background-color: #9e3c3d;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+footer a{
+	color: white;
+	font-size: medium;
+	text-decoration: none;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+hr{
+	width: 85%;
+	border: white 1px solid;
+
+}
+.fa-user{
+	font-size: 30px;
+	position: absolute;
+	right: 1%;
+	top: 1%;
+	color: white;
+	padding: 1%;
+	background-color: #151E3F;
+	border-radius: 3px;
+}
+.fa-user:hover{
+border-bottom: 2px white solid;
+}
+#headerNav{
+padding: 20px;
+text-align: center;
+}
+.companyColor{
+background-color: #D88CAB;
+opacity: 0.9;
+
+}
+
+
+.white{
+	background-color: white;
+	
+}
+nav a{
+	text-decoration: none;
+	color: #9e3c3d;
+	background-color: white;
+	border:solid #9e3c3d 1px;
+	margin: 0px;
+	padding: 10px;
+	border-radius: 2px;
+}
+nav a:hover{
+	border:solid white 1px;
+	background-color: #9e3c3d;
+	color: white;
+}
+.hidden{
+	display: none;
+}
+
+.form{ 
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.form input {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0 0 0;
+	border: 1px solid #ccc;
+  }
+  
+  .form input[type="submit"] {
+	background-color: #9e3c3d;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+  }
+  .search form input{
+	height:35px;
+	width :100%;
+	margin: 30px 0 0 0;
+  }
+.whitefont{
+	color:white;
+}
+.error{
+	color:red;
+}
+.contact{
+	padding: 1%;
+	
+	border: 1px solid #ccc;
+	
+}
+.contact form {
+	
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+  }
+  
+ .contact input, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 10px 0 0 0;
+  }
+  
+
+.logo{
+	display: none;
+}
+  .advert, .advertUpdate{
+	background-color: #ccc;
+color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 0;
+  }
+
+  .advertUpdate input{
+margin: 5px 0  5px 0 ;
+  }
+  .advert input[type='text'],.advert textarea{
+	border: none;
+	color:white;
+	background-color:#D88CAB ;
+  }
+.AdvertButton, .availableAds{
+	background-color: #151E3F; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 1%;
+	border-radius: 1px;
+	
+}
+
+.AdvertButton:hover{
+	text-decoration: underline;
+}
+.availableAds{
+	right:0;
+	position: absolute;
+}
+
+.quotationTitle{
+	background-color: #D88CAB;
+	border: #D88CAB 1px solid;
+	color: white;
+	padding: 1%;
+}
+.quotationInfo{
+	color: black;
+	margin: 1%;
+	box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2), 0 1.5% 5% 0 rgba(0, 0, 0, 0.19);
+	border: #D88CAB 1px solid;
+}
+
+
+  
+@media only screen and (min-width:800px){
+	.col-1{
+		width:8.33%;
+	}
+	.col-2{
+		width:16.66%;
+	}
+	
+	.col-3{
+		width:25%;
+	}
+	
+	.col-4{
+		width:33.33%;
+	}
+	
+	.col-5{
+		width:41.66%;
+	}
+	
+	.col-6{
+		width:50%;
+	}
+	
+	.col-7{
+		width:58.33%;
+	}
+	
+	.col-8{
+		width:66.33%;
+	}
+	
+	.col-9{
+		width:75%;
+	}
+	
+	.col-10{
+		width:83.33%;
+	}
+	
+	.col-11{
+		width:91.66%;
+	}
+	
+	.col-12{
+		width:100%;
+	}
+	
+	.logo, .adSlideshow, .next, .prev{
+		display: block;
+	}
+	.advert, .advertUpdate{
+		margin:10px;
+	}
+}
